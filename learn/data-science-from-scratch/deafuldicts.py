@@ -1,4 +1,6 @@
-document = {"forgiveness", "is","better", "than", "permission", "this", "is", "better", "choice"}
+document = ["forgiveness", "is", "better", "than", "permission", "than", "is", "better", "choice", "better"]
+print("document:")
+print(document)
 
 word_counts = {}
 for word in document:
@@ -41,3 +43,57 @@ dd_pair = defaultdict(lambda: [0, 0])
 dd_pair[2][1] = 1                       # now dd_pair contains {2, [0,1]}
 print("dd_pair")
 print(dd_pair)
+
+from collections import Counter
+c = Counter([0, 1, 2, 0])           # c is (basically) {0 : 2, 1 : 1, 2 : 1}
+print(c)
+word_counts = Counter(document)
+print("word_counts :")
+print(word_counts)
+
+# print the 10 most common words and their counts
+for word, count in word_counts.most_common(10):
+    print word, count
+
+
+# Set
+s = set()
+s.add(1)
+s.add(2)
+s.add(2)
+
+x = len(s)
+print x
+
+y = 2 in s
+z = 3 in s
+print y, z
+
+# Control Flow
+x = 0
+
+for x in range(10):
+    if x == 3:
+      continue     # go immediately to the next iteration
+    if x == 5:
+      break         # quit the loop entirely
+    print x
+
+# Sorting
+x = [4, 1, 2, 3]
+y = sorted(x)  # is [1, 2, 3, 4], x is unchanged
+print y
+print "x before:" , x
+x.sort()       # now x is [1, 2, 3, 4]
+print "x end: ", x
+
+
+# sort the list by absolute value from largest to smallest
+x = sorted([-4, 1, -2, 3], key=abs, reverse=True)  # is [-4, 3, -2, 1]
+print "x: ", x
+
+# sort the words and counts from highest count to lowest
+wc = sorted(word_counts.items(),
+            key=lambda (word, count): count,
+            reverse=True)
+print "wc: ", wc
