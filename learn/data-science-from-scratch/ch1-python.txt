@@ -1,0 +1,77 @@
+hzhang@hua-ubuntu-76:~$ python
+Python 2.7.12 (default, Nov 19 2016, 06:48:10) 
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1 in [1, 2, 3]
+True
+>>> x = [1, 2, 3]
+>>> x.extend([4,5,6])
+>>> print(x)
+[1, 2, 3, 4, 5, 6]
+>>> y = x + [4, 5, 6]
+>>> print(y)
+[1, 2, 3, 4, 5, 6, 4, 5, 6]
+>>> x.append(0)
+>>> print(x)
+[1, 2, 3, 4, 5, 6, 0]
+>>> printx
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'printx' is not defined
+>>> y=x[-1]
+>>> print(y)
+0
+>>> z=len(x)
+>>> print(z)
+7
+>>> x,y = [1, 2]
+>>> print(x)
+1
+>>> print(y)
+2
+>>> _, y = [1, 2]
+>>> print(y)
+2
+>>> _, y = [1, 3]
+>>> print(y)
+3
+>>> my_list = [1, 2]
+>>> print(my_list)
+[1, 2]
+>>> my_list[1] = 3
+>>> print(my_list)
+[1, 3]
+>>> other_tuple = 3, 4
+>>> Try:
+...   my_tuple = (1, 2)
+... except TypeError:
+...   print "cannot modify a tuple"
+... 
+cannot modify a tuple
+>>> def sum_and_product(x, y):
+...   return (x + y), (x * y)
+... 
+>>> sp = sum_and_product(2, 3) 
+>>> s, p = sum_and_product(5, 10)
+>>> print(sp)
+(5, 6)
+>>> print(s)
+15
+>>> print(p)
+50
+>>> empty_dict = {}
+>>> empty_dict2 = dict()
+>>> grades = { Joel" : 80, "Tim" : 95}  # dictonary literal
+  File "<stdin>", line 1
+    grades = { Joel" : 80, "Tim" : 95}  # dictonary literal
+                           ^
+SyntaxError: invalid syntax
+>>> grades = { "Joel" : 80, "Tim" : 95}  # dictonary literal
+>>> joesl_grade = grades["Joel"]
+>>> print(joesl_grade)
+80
+>>> kate_has_grade = "Kate" in grades
+>>> print(kate_has_grade)
+False
+>>> 
+
