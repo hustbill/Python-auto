@@ -3,6 +3,9 @@
 # http://matplotlib.org/
 # visualizing data tool, for simple bar charts, line charts, and scatterplots
 
+# using matplotlib.pyplot module
+from matplotlib import pyplot as plt
+
 movies = ["Annie Hall", "Ben-Hur", "Casablanca", "Gandhi", "West Side Story"]
 num_oscars = [5, 11, 3, 8, 10]
 
