@@ -1,0 +1,3 @@
+[submodule "python-crawler"]
+	path = python-crawler
+	url = https://github.com/hustbill/python-crawler.git

@@ -1,4 +1,6 @@
-Python Homework 2015.06.25
+Python Homework 
+----------------
+2015.06.25
 
 Now write a similar game to the one that I created in the last exercise. It can be any kind of game you want to in the same flavour. Spend a week on it, making it as interesting as possible. For study  Drills, use lists, functions, and modules as much as possible,  and find as many new pieces of Python as you can to make the game work.
 
