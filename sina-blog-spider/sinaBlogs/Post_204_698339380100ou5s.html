@@ -1,0 +1,123 @@
+
+        <html>
+            <head>
+                <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"" />
+                <title>USE&nbsp;MATLAB&nbsp;TO&nbsp;CALL&nbsp;C++&nbsp;dll(zz)</title>
+                <link href=""http://simg.sinajs.cn/blog7style/css/conf/blog/article.css""
+                      type=""text/css"" rel=""stylesheet"" />
+            </head>
+            <body>
+                <h2>USE&nbsp;MATLAB&nbsp;TO&nbsp;CALL&nbsp;C++&nbsp;dll(zz)</h2>
+                <p>By: <em>billyzhang2010</em> 原文发布于：<em>2009-03-29 10:10:20</em></p>
+                    
+		<div id="sina_keyword_ad_area2" class="articalContent   ">
+			<div>
+<h4>What are my options for interfacing MATLAB code with code in
+other programming languages like C, C++, or FORTRAN?</H4>
+<p><a HREF="http&#58;//www.mathworks.com/support/tech-notes/1600/1622_files/1622_R13.html">
+MATLAB 6.5 (R13) or below</A></P>
+<hr />
+<h5>Index</H5>
+<ol>
+<li><a HREF="http&#58;//www.mathworks.com/support/tech-notes/1600/1622.html#Call_C_from_MATLAB">
+How do I call C or FORTRAN code from MATLAB?</A></LI>
+<li><a HREF="http&#58;//www.mathworks.com/support/tech-notes/1600/1622.html#Call_MATLAB_from_C">
+How do I call MATLAB from C or FORTRAN stand-alone
+programs?</A></LI>
+<li><a HREF="http&#58;//www.mathworks.com/support/tech-notes/1600/1622.html#Convert_M_to_C">
+How do I convert my M-code into a C or C++ shared library?</A></LI>
+<li><a HREF="http&#58;//www.mathworks.com/support/tech-notes/1600/1622.html#Product_comparison">
+How do I know when I would need to buy MATLAB Compiler and when I
+would need only MATLAB?</A></LI>
+</OL>
+<hr />
+<h4>Section 1&#58; How do I call C or FORTRAN code from
+MATLAB?</H4>
+<p>You can call your existing C or FORTRAN programs from MATLAB by
+creating MEX-files.</P>
+<p><strong>What is a MEX file?</STRONG><br />
+MEX is a built-in utility that enables you to call C or FORTRAN
+code in MATLAB by compiling your code into a MATLAB Executable
+called a MEX-file. MEX-files are dynamically linked subroutines
+that are called as regular MATLAB functions. This requires you to
+replace your application's main() with a special gateway function -
+called "mexFunction" - to pass inputs and outputs to and from
+MATLAB. MEX is discussed in the <a HREF="http&#58;//www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/f29502.html">
+MATLAB External Interfaces Guide</A>. For in-depth examples and
+other detailed MEX information, see the MEX-files Guide, <a HREF="http&#58;//www.mathworks.com/support/tech-notes/1600/1605.html">
+Technical Note 1605</A>. To use MEX, you do not need additional
+MathWorks products; all you need is MATLAB and a supported C or
+FORTRAN compiler. On 32-bit Windows, a supported compiler (LCC) is
+distributed with MATLAB. See the <a HREF="http&#58;//www.mathworks.com/support/compilers/current_release/">
+Supported and Compatible Compiler list</A> for a complete list of
+supported C compilers. For example, to compile foo.c into a MEX
+function, use the following syntax&#58;</P>
+<pre>
+mex foo.c
+</PRE>
+The documentation has several examples of <a HREF="http&#58;//www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/f12977.html">
+C MEX-files</A> and <a HREF="http&#58;//www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/f21779.html">
+FORTRAN MEX-files</A>.
+<p><strong>Can I create C++ or Fortran MEX-files?</STRONG><br />
+Yes, you can create C++ MEX-files in MATLAB. For an example, look
+at file</P>
+<pre>
+mexcpp.cpp
+</PRE>
+in matlabroot/extern/examples/mex, where "matlabroot" is the root
+directory of your MATLAB installation.
+<h4>Section 2&#58; How do I call MATLAB from C or
+FORTRAN stand-alone programs?</H4>
+<p>The MATLAB Engine allows C or FORTRAN programs to communicate
+with a separate MATLAB process via pipes in UNIX and through
+ActiveX on Windows. For more information on the MATLAB Engine, see
+<a HREF="http&#58;//www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/f38569.html">
+using the MATLAB Engine</A>.</P>
+<h4>Section 3&#58; How do I convert my M-code into a C
+or C++ shared library?</H4>
+<p>You can convert M-code into a C or C++ shared library using the
+MATLAB Compiler. This shared library can then be incorporated into
+a Visual Studio project, or be combined with a driver file into a
+stand-alone application. To compile your M-code, for example foo1.m
+and foo2.m, into a C shared library use the following
+syntax&#58;</P>
+<pre>
+mcc -B csharedlib&#58;libmyfoo foo1.m foo2.m
+</PRE>
+For an example on building a C shared library and a driver file,
+refer to the <a HREF="http&#58;//www.mathworks.com/access/helpdesk/help/toolbox/compiler/f2-1000836.html">
+C shared library example</A> of the documentation. It is further
+possible to integrate these shared libraries into Visual Studio
+applications in <a HREF="http&#58;//www.mathworks.com/support/solutions/data/1-UR7P0.html?1-UR7P0">
+Visual Studio .NET 2003</A> and <a HREF="http&#58;//www.mathworks.com/support/solutions/data/1-2Q3TJ5.html?solution=1-2Q3TJ5">
+Visual Studio 2005</A>.
+<h4>Section 4&#58; How do I know when I would need to
+buy MATLAB Compiler and when I would need only MATLAB?</H4>
+<p>If you have C or FORTRAN code and want to</P>
+<ul>
+<li>generate MEX-files to execute C, C++, or FORTRAN code in
+MATLAB, or</LI>
+<li>link to a MATLAB session in order to execute MATLAB code in C,
+C++, or FORTRAN in a stand-alone program you need MATLAB and a
+<a HREF="http&#58;//www.mathworks.com/support/compilers/current_release/">
+supported C, C++, or FORTRAN compiler</A> to compile the source
+code.
+<p>If you have C or C++ code as well as M-code and you want to</P>
+</LI>
+<li>create a C or C++ shared library to integrate into an existing
+application and custom MATLAB code, or</LI>
+<li>create a COM/ .NET object from M-code using MATLAB Builder for
+.NET to integrate with an existing Visual Studio application,
+or</LI>
+<li>create an Excel plug-in from M-code using MATLAB Builder for
+Excel to integrate with an existing Excel project you need MATLAB,
+MATLAB Compiler, and a <a HREF="http&#58;//www.mathworks.com/support/compilers/current_release/">
+supported C, C++, or FORTRAN compiler</A> to compile the source
+code.</LI>
+</UL>
+</DIV>							
+		</div>
+						
+                <p><a href="index.html">返回目录</a></p>
+            </body>
+        </html>

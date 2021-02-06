@@ -13,3 +13,8 @@ Use python and Django for develop web application
 ### Python, Django and GraphQL
 
 Graphene-Django is built on top of Graphene. Graphene-Django provides some additional abstractions that make it easy to add GraphQL functionality to your Django project.
+
+### Python Sina blog spider
+Download the Sina blogs by Python code. For example, blog.sina.com.cn/u/1770207544  
+
+2021-02-06 update.  

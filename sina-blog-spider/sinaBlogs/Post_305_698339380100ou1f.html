@@ -1,0 +1,54 @@
+
+        <html>
+            <head>
+                <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"" />
+                <title>Hide&nbsp;Pivot&nbsp;Subtotals(zz)</title>
+                <link href=""http://simg.sinajs.cn/blog7style/css/conf/blog/article.css""
+                      type=""text/css"" rel=""stylesheet"" />
+            </head>
+            <body>
+                <h2>Hide&nbsp;Pivot&nbsp;Subtotals(zz)</h2>
+                <p>By: <em>billyzhang2010</em> 原文发布于：<em>2010-10-25 23:50:58</em></p>
+                    
+		<div id="sina_keyword_ad_area2" class="articalContent   ">
+			<div>
+<h4><a TITLE="http&#58;//www.contextures.com/xlPivot03.html#Subtotals" HREF="http&#58;//www.contextures.com/xlPivot03.html#Subtotals">
+http&#58;//www.contextures.com/xlPivot03.html#Subtotals</A></H4>
+<h4><b>Hide Pivot Subtotals</B></H4>
+<p>When you add more than one field to the row or column area, the
+pivot table will display subtotals. The following code removes all
+subtotals from the pivot table.</P>
+<pre>
+Sub NoSubtotals()
+'pivot table tutorial by contextures.com
+'turns off subtotals in pivot table
+'.PivotFields could be changed to
+'.RowFields or .ColumnFields
+Dim pt As PivotTable
+Dim pf As PivotField
+On Error Resume Next
+For Each pt In ActiveSheet.PivotTables
+  For Each pf In pt.PivotFields
+    'First, set index 1 (Automatic) to True,
+    'so all other values are set to False
+    pf.Subtotals(1) = True
+    pf.Subtotals(1) = False
+  Next pf
+Next pt
+
+End Sub
+</PRE>
+<p><a HREF="http&#58;//www.contextures.com/#Top"><img BORDER="0"  src ="http&#58;//www.contextures.com/images/scrollup.gif" WIDTH="9" HEIGHT="11"  ALT="Hide&nbsp;<wbr>Pivot&nbsp;<wbr>Subtotals(zz)"  TITLE="Hide&nbsp;<wbr>Pivot&nbsp;<wbr>Subtotals(zz)" /></A></P>
+<blockquote>
+<blockquote>
+<p><img BORDER="1"  src ="http&#58;//www.contextures.com/images/pt12.gif" WIDTH="218" HEIGHT="146"  ALT="Hide&nbsp;<wbr>Pivot&nbsp;<wbr>Subtotals(zz)"  TITLE="Hide&nbsp;<wbr>Pivot&nbsp;<wbr>Subtotals(zz)" /></P>
+<p>Download the zipped <a HREF="http&#58;//www.contextures.com/PivotSales.zip">sample
+file</A> for this pivot table tutorial</P>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+</DIV>							
+		</div>
+						
+                <p><a href="index.html">返回目录</a></p>
+            </body>
+        </html>

@@ -1,0 +1,40 @@
+
+        <html>
+            <head>
+                <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"" />
+                <title>清除bloodhound.w32.ep病毒</title>
+                <link href=""http://simg.sinajs.cn/blog7style/css/conf/blog/article.css""
+                      type=""text/css"" rel=""stylesheet"" />
+            </head>
+            <body>
+                <h2>清除bloodhound.w32.ep病毒</h2>
+                <p>By: <em>billyzhang2010</em> 原文发布于：<em>2006-02-15 12:56:20</em></p>
+                    
+		<div id="sina_keyword_ad_area2" class="articalContent   ">
+			<div>
+<div>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr> 昨天是情人节，晚上下班后，在公司里面用QQ聊天，
+一不留神，自己的QQ自动向外发文件，我立马意识到中了病毒，但是我的诺顿没有查出来，而且我的防火墙，也报错，内存不能读，起初我还以为是自己防火墙坏了，重新安装，重启机器后，还是报错。弄得我都不耐烦了。刚好，同事要约一道去上海师大打羽毛球，我就没有管它。<br />
+
+&nbsp;<wbr>&nbsp;<wbr>
+今天早上来公司后，觉得自己的机器总是很慢，CPU占用率很高，感到很烦，卸载了旧的诺顿，手头又没有现成的杀毒工具，公司软件服务器上的金山毒霸要注册，瑞星序列号，免费的杀毒软件下载又很慢。最后只好问同事要了一个新诺顿，终于安装好了结果查出了病毒，但是更加邪门，诺顿提示病毒信息后，explorer就报错，立马关闭了，连续两次，然后系统就僵死在那里。任务管理器都打不开。这个病毒真厉害，佩服佩服。<br />
+
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>
+后来，我想注销一次，不用Administrator登录，换成普通用户登录，然后找同事要了一个病毒库更新，终于搞定了病毒，将感染文件隔离了。</DIV>
+<div>&nbsp;<wbr>&nbsp;<wbr>
+事后，我在日志里面找到了bloodhound.w32.ep这个该死的病毒。在google里面找了一些相关信息：</DIV>
+<div>&nbsp;<wbr> &nbsp;<wbr>启动项HKLM\\Run&#58; [SonudMan]
+C&#58;\WINDOWS\system32\WNILOGON.exe<br />
+据金山毒霸反病毒工程师介绍，这是一个通过qq传播的蠕虫病毒。病毒先在中毒主机系统目录下释放其自身：%system32%\wnilogon.exe，释放其动态连接库文件：%system32%\winsook.dll和%system32%\tmhk.dll，并添加到启动项使病毒开机自启动。</DIV>
+<div>&nbsp;<wbr>&nbsp;<wbr>
+同时，该病毒一旦发作后将盗取用户qq密码和重要信息，并将其盗取的信息发送到指定的地方，并到指定网站更新自己；结束大量反病毒软件进程，进一步保护自己，增强病毒自身隐避性。</DIV>
+<div>&nbsp;<wbr>后记：</DIV>
+<div>
+&nbsp;<wbr>今天上午花了将近两个小时折腾这个病毒。主要是自己疏于防范，没有及时更新病毒库，以后一定要及时更新自己的病毒库，争取早防止，将病毒扼杀在萌芽状态。</DIV>
+<div>&nbsp;<wbr></DIV>
+<div>&nbsp;<wbr><br /></DIV>
+</DIV>							
+		</div>
+						
+                <p><a href="index.html">返回目录</a></p>
+            </body>
+        </html>

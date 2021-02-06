@@ -1,0 +1,33 @@
+
+        <html>
+            <head>
+                <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"" />
+                <title>找回”显示桌面”和&nbsp;“回收站”图标</title>
+                <link href=""http://simg.sinajs.cn/blog7style/css/conf/blog/article.css""
+                      type=""text/css"" rel=""stylesheet"" />
+            </head>
+            <body>
+                <h2>找回”显示桌面”和&nbsp;“回收站”图标</h2>
+                <p>By: <em>billyzhang2010</em> 原文发布于：<em>2011-01-04 14:26:19</em></p>
+                    
+		<div id="sina_keyword_ad_area2" class="articalContent   ">
+			<div>
+<p>如何找回“显示桌面”这个图标&#58;</P>
+<p>点击“开始→运行”，在弹出的“运行”对话框中输入“REGSVR32 /n /i&#58;u
+shell32”（不含双引号），然</P>
+<p>后回车，片刻后会弹出“shell32中的DllInstall成功”对话框，“显示桌面”按钮即可恢复</P>
+<p>对于Windows XP，桌面上的回收站图标没有了，可以按以下方法找回来：</P>
+<p>单击开始→运行→输入“regedit”（引号不要输入）→回车打开注册表编辑器，然后展开</P>
+<p>
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\Namespace，右键单</P>
+<p>击“Namespace”项或其前面的文件夹图标，在弹出的快捷菜单中选择“新建（N）→项（K）”，然后将新建</P>
+<p>
+的项重命名为“&#123;645FF040-5081-101B-9F08-00AA002F954E&#125;”，点击该项，在窗口的右侧有一个“默认值”</P>
+<p>的REG_SZ的项目，右击选择“修改”，将其值修改为“Recycle Bin”，确定后关闭注册表编辑器。然后在桌</P>
+<p>面上右击，选择“刷新”即可。</P>
+</DIV>							
+		</div>
+						
+                <p><a href="index.html">返回目录</a></p>
+            </body>
+        </html>

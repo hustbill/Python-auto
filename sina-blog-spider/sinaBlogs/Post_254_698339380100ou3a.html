@@ -1,0 +1,68 @@
+
+        <html>
+            <head>
+                <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"" />
+                <title>VMware:&nbsp;扩展硬盘空间</title>
+                <link href=""http://simg.sinajs.cn/blog7style/css/conf/blog/article.css""
+                      type=""text/css"" rel=""stylesheet"" />
+            </head>
+            <body>
+                <h2>VMware:&nbsp;扩展硬盘空间</h2>
+                <p>By: <em>billyzhang2010</em> 原文发布于：<em>2009-11-02 12:50:33</em></p>
+                    
+		<div id="sina_keyword_ad_area2" class="articalContent   ">
+			<div>
+<p>
+*******************************************************************</P>
+<h6>VMware&#58; 扩展硬盘空间</H6>
+<p>Steps&#58;<br />
+1)&nbsp;<wbr> 关闭要扩展的虚拟机。<br />
+2)&nbsp;<wbr> 打开主机DOS命令窗口，用"cd"命令转到VMware安装路径&#58;</P>
+<p>D&#58;\soft\VMware\VMware
+Workstation&gt;vmware-vdiskmanager.exe -x 20GB
+"d&#58;\My Virtual<br />
+Machines\Windows XP Professional\Windows XP
+Professional.vmdk"<br />
+注明：&nbsp;<wbr>&nbsp;<wbr></P>
+<p ALIGN="left">&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr> a) -x 表示extend；<br />
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr> b) 20Gb表示要扩展之后要达到的总空间；</P>
+<p ALIGN="left">&nbsp;<wbr>&nbsp;<wbr> c)
+要扩展的vmdk，不能带snapshot。如果有，需删除后再做扩展；<br />
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr> 如果虚拟机没有跟VMware
+server放在同一目录，需要带上虚拟机的路径(d&#58;\xxx)。<br />
+4) 等待主机分配空间</P>
+<p>Using log file
+C&#58;\Temp\vmware-zhangb\vdiskmanager.log<br />
+&nbsp;<wbr> Grow&#58; 100% done.<br />
+The old geometry C/H/S of the disk is&#58;
+16383/16/63<br />
+The new geometry C/H/S of the disk is&#58;
+16383/16/63<br />
+Disk expansion completed successfully.</P>
+<p>WARNING&#58; If the virtual disk is partitioned, you
+must use a third-party<br />
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr> utility in the
+virtual machine to expand the size of the<br />
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr> partitions. For
+more information, see&#58;<br />
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr> <a HREF="http&#58;//www.vmware.com/support/kb/enduser/std_adp.php?p_faqid=1647">
+http&#58;//www.vmware.com/support/kb/enduser/std_adp.php?p_faqid=1647</A></P>
+<p ALIGN="left"><br />
+5) 启动虚拟机.<br />
+6)如果虚拟机中没有其他分区，则在虚拟机中打开DOS命令窗口,输入diskpart.exe。
+此时DOS路径会消失，命令窗口显示DISKPART&gt;<br />
+a) 输入DISKPART&gt;list
+volume.屏幕会列出所有硬盘分区，自己对照盘符，确定D盘对应哪个volume,假设对应volume 2<br />
+b) 输入DISKPART&gt;select volume 2.<br />
+c) 输入DISKPART&gt;extend<br />
+d) 完成。</P>
+<p>
+****************************************************************</P>
+<p>7) 如果虚拟机中有其他分区，则要在虚拟机上安装第三方分区工具，例如Norton
+PartitionMagic，用它在虚拟机上重新设置分区大小，重启系统生效。</P>
+</DIV>							
+		</div>
+						
+                <p><a href="index.html">返回目录</a></p>
+            </body>
+        </html>
