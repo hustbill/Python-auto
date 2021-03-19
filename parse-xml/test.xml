@@ -1,0 +1,220 @@
+<Configuration xmlns:d1p1="http://schemas.datacontract.org/2004/07/Microsoft.Online.Configuration" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/online/directoryservices/configuration/2013/01">
+  <d1p1:Alias>AME\rashr</d1p1:Alias>
+  <AcceptRequestsRoutedThroughGateway xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">true</AcceptRequestsRoutedThroughGateway>
+  <AllowAddingDataElementToMigrationAPIException xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value>true</d1p1:Value>
+    <d1p1:DefaultValue>false</d1p1:DefaultValue>
+    <d1p1:FeatureName>AllowAddingDataElementToMigrationAPIException</d1p1:FeatureName>
+  </AllowAddingDataElementToMigrationAPIException>
+  <AllowIncubationTenantsSync xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value>true</d1p1:Value>
+    <d1p1:DefaultValue>false</d1p1:DefaultValue>
+    <d1p1:FeatureName>AllowIncubationTenantsSync</d1p1:FeatureName>
+  </AllowIncubationTenantsSync>
+  <AllowResponseGovernorToLimitDirectoryChangesResponse xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">true</AllowResponseGovernorToLimitDirectoryChangesResponse>
+  <AllowSiMoveForMultiGeoEnabledService xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Percentage>100</d1p1:Percentage>
+    <d1p1:Value>true</d1p1:Value>
+    <d1p1:DefaultValue>false</d1p1:DefaultValue>
+    <d1p1:RolloutStage>
+      <d1p1:PlanName>SyncService</d1p1:PlanName>
+      <d1p1:Identifier>All</d1p1:Identifier>
+      <d1p1:RolloutTime>
+        <DateTime xmlns="http://schemas.datacontract.org/2004/07/System">2018-02-21T20:24:14.8512923Z</DateTime>
+        <OffsetMinutes xmlns="http://schemas.datacontract.org/2004/07/System">0</OffsetMinutes>
+      </d1p1:RolloutTime>
+      <d1p1:StageIndex>2</d1p1:StageIndex>
+      <d1p1:TotalStages>3</d1p1:TotalStages>
+      <d1p1:AutoRolloutId i:nil="true" />
+    </d1p1:RolloutStage>
+    <d1p1:FeatureName>AllowSiMoveForMultiGeoEnabledService</d1p1:FeatureName>
+  </AllowSiMoveForMultiGeoEnabledService>
+  <AppLogoBackfillAppLimit xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value>0</d1p1:Value>
+    <d1p1:DefaultValue>1</d1p1:DefaultValue>
+    <d1p1:FeatureName>AppLogoBackfillAppLimit</d1p1:FeatureName>
+  </AppLogoBackfillAppLimit>
+  <AssumeAllRedirectedCallsFromBlackforest xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Percentage>100</d1p1:Percentage>
+    <d1p1:Value>true</d1p1:Value>
+    <d1p1:DefaultValue>false</d1p1:DefaultValue>
+    <d1p1:FeatureName>AssumeAllRedirectedCallsFromBlackforest</d1p1:FeatureName>
+  </AssumeAllRedirectedCallsFromBlackforest>
+  <AuditTableStorageEndpointSuffixOverride xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Percentage>100</d1p1:Percentage>
+    <d1p1:Value>core.windows.net</d1p1:Value>
+    <d1p1:DefaultValue i:nil="true" />
+    <d1p1:RolloutStage>
+      <d1p1:PlanName>(FF) ByFullSite</d1p1:PlanName>
+      <d1p1:Identifier>All (8/8)</d1p1:Identifier>
+      <d1p1:RolloutTime>
+        <DateTime xmlns="http://schemas.datacontract.org/2004/07/System">2020-06-24T01:17:47.022979Z</DateTime>
+        <OffsetMinutes xmlns="http://schemas.datacontract.org/2004/07/System">0</OffsetMinutes>
+      </d1p1:RolloutTime>
+      <d1p1:StageIndex>7</d1p1:StageIndex>
+      <d1p1:TotalStages>8</d1p1:TotalStages>
+      <d1p1:AutoRolloutId i:nil="true" />
+    </d1p1:RolloutStage>
+    <d1p1:FeatureName>AuditTableStorageEndpointSuffixOverride</d1p1:FeatureName>
+  </AuditTableStorageEndpointSuffixOverride>
+  <AuthorizeCertByMsitTrustedIssuers xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value>true</d1p1:Value>
+    <d1p1:DefaultValue>false</d1p1:DefaultValue>
+    <d1p1:FeatureName>AuthorizeCertByMsitTrustedIssuers</d1p1:FeatureName>
+  </AuthorizeCertByMsitTrustedIssuers>
+  <AuthorizeCertByTrustedIssuers xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Percentage>100</d1p1:Percentage>
+    <d1p1:Value>true</d1p1:Value>
+    <d1p1:DefaultValue>false</d1p1:DefaultValue>
+    <d1p1:RolloutStage>
+      <d1p1:PlanName>(FF) ByFullSite</d1p1:PlanName>
+      <d1p1:Identifier>All (8/8)</d1p1:Identifier>
+      <d1p1:RolloutTime>
+        <DateTime xmlns="http://schemas.datacontract.org/2004/07/System">2020-03-13T20:55:09.9566227Z</DateTime>
+        <OffsetMinutes xmlns="http://schemas.datacontract.org/2004/07/System">0</OffsetMinutes>
+      </d1p1:RolloutTime>
+      <d1p1:StageIndex>7</d1p1:StageIndex>
+      <d1p1:TotalStages>8</d1p1:TotalStages>
+      <d1p1:AutoRolloutId i:nil="true" />
+    </d1p1:RolloutStage>
+    <d1p1:FeatureName>AuthorizeCertByTrustedIssuers</d1p1:FeatureName>
+  </AuthorizeCertByTrustedIssuers>
+  <AzureEntityPropertySizeLimit xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">65500</AzureEntityPropertySizeLimit>
+  <AzureAccountToDsmsSasTokenPathMapping xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value i:nil="true" />
+    <d1p1:DefaultValue>
+      <m_dictionary xmlns="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore01eu</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore01eusasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore02eu</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore02eusasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore01ff</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore01ffsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore02ff</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore02ffsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore01prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore01prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore02prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore02prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore03prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore03prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore04prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore04prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore05prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore05prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore06prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore06prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore07prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore07prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore08prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/accountsas/adhoc/changeaudit/aadmsodststore08prdsasacdlpruw</Value>
+        </KeyValueOfstringstring>
+      </m_dictionary>
+    </d1p1:DefaultValue>
+    <d1p1:FeatureName>AzureAccountToDsmsSasTokenPathMapping</d1p1:FeatureName>
+  </AzureAccountToDsmsSasTokenPathMapping>
+  <AzureAccountToDsmsStorageAccountPathMapping xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value i:nil="true" />
+    <d1p1:DefaultValue>
+      <m_dictionary xmlns="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore01eu</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore01eu</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore02eu</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore02eu</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore01ff</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore01ff</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore02ff</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore02ff</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore01prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore01prd</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore02prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore02prd</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore03prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore03prd</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore04prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore04prd</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore05prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore05prd</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore06prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore06prd</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore07prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore07prd</Value>
+        </KeyValueOfstringstring>
+        <KeyValueOfstringstring xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <Key>aadmsodststore08prd</Key>
+          <Value>https://useast2euap-dsms.dsms.core.windows.net/dsms/msods/storageaccounts/changeaudit/aadmsodststore08prd</Value>
+        </KeyValueOfstringstring>
+      </m_dictionary>
+    </d1p1:DefaultValue>
+    <d1p1:FeatureName>AzureAccountToDsmsStorageAccountPathMapping</d1p1:FeatureName>
+  </AzureAccountToDsmsStorageAccountPathMapping>
+  <AzureEntityPropertySizeLimitPhased xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value>0</d1p1:Value>
+    <d1p1:DefaultValue>65500</d1p1:DefaultValue>
+    <d1p1:FeatureName>AzureEntityPropertySizeLimitPhased</d1p1:FeatureName>
+  </AzureEntityPropertySizeLimitPhased>
+  <AzureStorageTableClientResetIntervalInMinutes xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">2</AzureStorageTableClientResetIntervalInMinutes>
+  <AzureStorageTableClientResetIntervalInMinutesPhased xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value>0</d1p1:Value>
+    <d1p1:DefaultValue>2</d1p1:DefaultValue>
+    <d1p1:FeatureName>AzureStorageTableClientResetIntervalInMinutesPhased</d1p1:FeatureName>
+  </AzureStorageTableClientResetIntervalInMinutesPhased>
+  <BackfillFailoverThreshold xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Online.DirectoryServices.SyncService">
+    <d1p1:Enabled>false</d1p1:Enabled>
+    <d1p1:Value>PT0S</d1p1:Value>
+    <d1p1:DefaultValue>PT6H</d1p1:DefaultValue>
+    <d1p1:FeatureName>BackfillFailoverThreshold</d1p1:FeatureName>
+  </BackfillFailoverThreshold>
+</Configuration>
